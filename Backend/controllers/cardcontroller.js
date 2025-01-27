@@ -129,6 +129,7 @@ exports.updateCard = async (req, res) => {
 
 exports.deleteCard = async (req, res) => {
   const cardId = req.params.id;
+  console.log(cardId);
 
   try {
     const card = await Card.findByPk(cardId);
